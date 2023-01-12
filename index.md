@@ -7,9 +7,10 @@ date: "2023-01-12"
 categories:
   - website
   - 2023-01
-engine: markdown
+engine: knitr
 format: html
 execute: 
+  eval: false
   echo: true
   cache: true
 keep-md: true
@@ -29,11 +30,12 @@ image: /posts/quarto-website/tobias-meme.jpg
 write markdown content in this 
 
 
+::: {.cell hash='index_cache/html/unnamed-chunk-1_d00423fae5d4ffc53564ce161da1fc9c'}
 
-```{r}
+```{.r .cell-code}
 summary(cars)
 ```
-
+:::
 
 
 ```
@@ -52,11 +54,12 @@ Including Plots
 You can also embed plots, for example:
 
 
+::: {.cell hash='index_cache/html/unnamed-chunk-2_9c36fecfd7825ae654435195c37a6d72'}
 
-```{r}
+```{.r .cell-code}
 plot(pressure)
 ```
-
+:::
 
 
 ![](index_image/image-20230112145420301.png)
@@ -71,8 +74,9 @@ plot(pressure)
 cd pwd
 
 
+::: {.cell hash='index_cache/html/unnamed-chunk-3_5c1c855358f2ffa4cfe353348d368713'}
 
-```{bash}
+```{.bash .cell-code}
 # echo "# make_your_data_analysis_website" >> README.md
 git init
 git add -A
@@ -81,7 +85,7 @@ git branch -M main
 git remote add origin https://github.com/jixing475/make_your_data_analysis_website.git
 git push -u origin main
 ```
-
+:::
 
 
 

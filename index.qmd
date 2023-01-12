@@ -10,6 +10,7 @@ categories:
 engine: knitr
 format: html
 execute: 
+  eval: false
   echo: true
   cache: true
 keep-md: true
